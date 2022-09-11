@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="ru">
@@ -73,6 +72,102 @@
                 5</lable>
             <label><input type="radio" name="radio-group-2" value = "Значение_5">
                 6 и более</lable>
+            <!DOCTYPE html>
+
+<html lang="ru">
+    <head>
+    <title>Список Гиперссылок</title>
+    </head>
+
+
+    <body>
+        
+        <h1><b>Пронумерованный список гиперссылок:</b></h1>
+        <p><strong>Выберете ссылку</strong></p>
+
+        <ol>
+            <li><a href = "http://example.com">Абсолютная ссылка на example.com</a></li>
+            <li><a href = "https://example.com">example.com(В протоколе https)</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+        
+        <form action = "/" method="POST">
+            <label>
+             Ваше имя: <br />
+                <input name = "field-name-1"
+                    value = "напиши имя" />
+            </label>
+            <br />
+
+            <label>
+            email: <br />
+            <input name = "field-email"
+                   value = "test@example.com"
+                   type ="email" />
+            </label>
+            <br />
+
+            <label>
+            Дата рождения: <br />
+            <input name = "field-date"
+                   value = "2022-06-09"
+                   type ="data" />
+            </label>
+            <br />
+
+            <label> Ваш пол?  <br /> </label>
+                <label><input type = "radio" checked = "checked" name = "radio-group-1" value ="Значение_1">
+                    Мужской</label><br />
+                <label><input type = "radio" checked = "checked" name = "radio-group-1" value ="Значение_2">
+                    Женский</label><br />
+                <label><input type = "radio" checked = "checked" name = "radio-group-1" value ="Значение_3">
+                    Другое
+            </label>
+            <br />
+
+        
+            <label>Выберете кол-во коненочстей : <br /> </label>
+            <label><input type="radio" cheked = "cheked" name="radio-group-2" value = "Значение_1">
+                Нет конечнотей</label><br />
+            <label><input type="radio" name="radio-group-2" value = "Значение_2">
+                Менее 3</lable><br />
+            <label><input type="radio" checked = "checked" name="radio-group-2" value = "Значение_3">
+                3</lable><br />
+            <label><input type="radio" checked = "checked" name="radio-group-2" value = "Значение_4">
+                4</lable><br />
+            <label><input type="radio" checked = "checked" name="radio-group-2" value = "Значение_5">
+                5</lable><br />
+            <label><input type="radio" name="radio-group-2" value = "Значение_6">
+                6 и более</lable>
+            <br />
+            <br />
+            <label>Свехспособности: <br /> </label>   
+                <select name = "field-name-4[]" multiple = "multiple">
+                    <option value ="Значение1">Бессмертие</option>
+                    <option value ="Значение2"> selected = "selected">Прохождение сквозь стенки</option>
+                    <option value ="Значение3"> selected = "selected">левитация</option>
+                </select>
+            <br />
+            <label>Биография <br /> </label>
+                <textarea name ="field-name-2" style = "margin: 0px; height : 35px; width: 187px;"> Напишите о себе </textarea>
+                </label><br>
+    
+            <label><input type = "checkbox" checked="checked" name="check-1">
+                С контактом ознакомлен (a)</label><br>
+            <input type = "submit" value = "Отправить">
+        </form>
+    </body>
+
+</html>
     
             <label>
                 Свехспособности:
