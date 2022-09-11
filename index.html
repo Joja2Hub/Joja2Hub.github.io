@@ -28,64 +28,61 @@
         </ol>
         
         <form action = "/" method="POST">
-        <p>
-        <label>
-            Ваше имя: <br />
-            <input name = "field-name-1"
-                   value = "напиши имя" />
-        </label><br />
-        
-        </p>
-        <p>
-        <label>
+            <label>
+             Ваше имя: <br />
+                <input name = "field-name-1"
+                    value = "напиши имя" />
+            </label>
+            <br />
+
+            <label>
             email: <br />
             <input name = "field-email"
                    value = "test@example.com"
                    type ="email" />
-        </label><br />
-        </p>
-        <p>
-        <label>
+            </label>
+            <br />
+
+            <label>
             Дата рождения: <br />
             <input name = "field-date"
                    value = "2022-06-09"
                    type ="data" />
-        </label><br />
-        </p>
-        <p>
-            Ваш пол? <br> 
-            <label><input type = "radio" checked = "checked" name "radio-group-1" value ="Значение_1">
-                Мужской</label><br>
-            <label><input type = "radio" checked = "checked" name "radio-group-1" value ="Значение_2">
-                Женский</label><br>
-        </p>
+            </label>
+            <br />
+
+            <label> Ваш пол?  <br /> </label>
+                <label><input type = "radio" checked = "checked" name = "radio-group-1" value ="Значение_1">
+                    Мужской</label><br />
+                <label><input type = "radio" checked = "checked" name = "radio-group-1" value ="Значение_2">
+                    Женский</label><br />
+                <label><input type = "radio" checked = "checked" name = "radio-group-1" value ="Значение_3">
+                    Другое</label><br />
+
         
-            Выберете кол-во коненочстей : <br>
-            <label><input type="radio" name="radio-group-1" value = "Значение_1">
+            <label>Выберете кол-во коненочстей : <br /> </label>
+            <label><input type="radio" cheked = "cheked" name="radio-group-2" value = "Значение_1">
                 Нет конечнотей</label>
-            <label><input type="radio" checked = "checked" name="radio-group-1" value = "Значение_2">
-                1</lable>
-            <label><input type="radio" checked = "checked" name="radio-group-1" value = "Значение_3">
-                2</lable>
-            <label><input type="radio" checked = "checked" name="radio-group-1" value = "Значение_4">
+            <label><input type="radio" name="radio-group-2" value = "Значение_5">
+                Менее 3</lable>
+            <label><input type="radio" checked = "checked" name="radio-group-2" value = "Значение_2">
                 3</lable>
-            <label><input type="radio" name="radio-group-1" value = "Значение_5">
-                Больше 3</lable>
+            <label><input type="radio" checked = "checked" name="radio-group-2" value = "Значение_3">
+                4</lable>
+            <label><input type="radio" checked = "checked" name="radio-group-2" value = "Значение_4">
+                5</lable>
+            <label><input type="radio" name="radio-group-2" value = "Значение_5">
+                6 и более</lable>
     
-        <p>
             <label>
                 Свехспособности:
                 <br>
-                <select size = "3" multiple name ="suppower[]">
-                    <option disabled> Выберете сверхспособности </option>
+                <select name = "field-name-4[]" multiple = "multiple">
                     <option value ="Значение1">Бессмертие</option>
                     <option value ="Значение2"> selected ="selected">Прохождение сквозь стенки</option>
                     <option value ="Значение3"> selected ="selected">левитация</option>
                 </select>
-            </label><br>
-         </p>
             
-         <p>
             <label>
                 Биография
                 <br>
@@ -95,15 +92,7 @@
             <label><input type = "checkbox" checked="checked" name="check-1">
                 С контактом ознакомлен (a)</label><br>
             <input type = "submit" value = "Отправить">
-         </form>
-        </p>
-                          
-                
-                                    
-
-
-
-
+        </form>
     </body>
 
 </html>
