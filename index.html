@@ -27,7 +27,12 @@
             <li><a href="https://example.com" rel="noindex">Ссылка запрещенная для индексации поисковиками</a></li>
             <li>В интернете существует <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" title = "контекстная ссылка">удивительно видео</a></li>
             <li><a href = "https://lifehacker.ru/kak-varit-pelmeni/"><img src = "https://github.com/Joja2Hub/Joja2Hub.github.io/blob/main/photo_2022-09-11_15-32-28.jpg?raw=true" alt = "Ссылка-изображение" style = "width:512px;height:640px;border:0;"></a></li>
-
+            <li>
+            <img src = "https://github.com/Joja2Hub/Joja2Hub.github.io/blob/main/circule.png?raw=true" usemap = "#Krug">
+                <map name = "Krug"><area shape = "circle" coords = "800,800,800,800" href = "https://www.kubsu.ru/" alt = "Круг"></map>
+                <img src = "https://github.com/Joja2Hub/Joja2Hub.github.io/blob/main/sqare.png?raw=true" usemap = "Kvadrat">
+                <map name = "Kvadrat"><area shape = "square" coords = "500,500,510" href = "https://www.kubsu.ru/" alt = "Квадрат"></map>
+            </li>
             <li><a href = "index.html">Относительная ссылка в текущем каталоге</a></li> 
             <li><a href = "/about/contacts">Относительная ссылка в каталоге about</a></li>
             <li><a href = "../floppa.html">Относительная ссылка в каталоге уровнем выше текущего</a></li> 
@@ -40,7 +45,7 @@
             <label>
              Ваше имя: <br />
                 <input name = "field-name-1"
-                    placeholder = "напиши имя" />
+                    value = "напиши имя" />
             </label>
             <br />
             <br />
@@ -48,7 +53,7 @@
             <label>
             email: <br />
             <input name = "field-email"
-                   placeholder = "mail@example.com"
+                   value = "test@example.com"
                    type ="email" />
             </label>
             <br />
@@ -79,7 +84,9 @@
             <label><input type="radio" cheked = "cheked" name="radio-group-2" value = "Значение_1">
                 Нет конечнотей</label><br />
             <label><input type="radio" name="radio-group-2" value = "Значение_2">
-                3 и менее</lable><br />
+                Менее 3</lable><br />
+            <label><input type="radio" checked = "checked" name="radio-group-2" value = "Значение_3">
+                3</lable><br />
             <label><input type="radio" checked = "checked" name="radio-group-2" value = "Значение_4">
                 4</lable><br />
             <label><input type="radio" checked = "checked" name="radio-group-2" value = "Значение_5">
@@ -89,15 +96,15 @@
             <br />
             <br />
             <label>Свехспособности: <br /> </label>   
-                <select size = "3" multiple name = "SupePower[]">
+                <select name = "field-name-4[]" multiple = "multiple">
                     <option value ="Значение1">Бессмертие</option>
-                    <option value ="Значение2"> Прохождение сквозь стенки</option>
-                    <option value ="Значение3"> Левитация</option>
+                    <option value ="Значение2"> selected = "selected">Прохождение сквозь стенки</option>
+                    <option value ="Значение3"> selected = "selected">Левитация</option>
                 </select>
             <br />
             <br />
             <label>Биография <br /> </label>
-                <textarea name ="field-name-2" style = "margin: 0px; height : 35px; width: 187px;" placeholder = "Напишите о себе"></textarea>
+                <textarea name ="field-name-2" style = "margin: 0px; height : 35px; width: 187px;"> Напишите о себе </textarea>
                 </label>
             <br />
             <br />
