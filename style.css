@@ -25,9 +25,9 @@ header {
 }
 
 .name {
-    margin-left: 170px;
+    margin-left: 100px;
     padding: 20px 0px 20px 0px;
-    font-size: 40px;
+    font-size: 100px;
     font-weight: bold;
     color: black;
 }
