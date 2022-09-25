@@ -1,89 +1,171 @@
 @media (max-width: 700px){
-body {
-    margin: 0;
-    color: black;
+    body{
+        color: rgb(#FFF);
+        background-color: #9DE0D7;
+        font-weight: bold;
+        margin: 0 auto;
+    }
+    .osnov, nav {
+        font-size: 35px;
+    }
+    nav {
+        padding: 0 0 0;
+    }
+    header {
+        max-width:100%;
+        font-size: 50px;
+    }
+    .header-container{
+        width: 90%;
+    }
+
+    .header-container img{
+        width: 30vw;
+        height: 30vw;
+    }
+    .divref{
+        max-width:100%;
+        padding: 20px;
+    }
+    footer {
+        max-width:100%;
+    }
+    #tbl{
+        display: flex;
+        flex-direction: column;
+    }
+    .form{
+        max-width:100%;
+        order: 1;
+    }
+    #tbl{
+        max-width:100%;
+    }
+    .table {
+
+        order: 2;
+    }
+
+    .topnav ul li{
+        display: flex;
+    }
+    .topnav nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+    }
+    header, .topnav, .container, .table, .form, footer{
+        background-color: #2f5687;
+        border-width: thick;
+        border-style: double;
+        border-color: white;
+        border-image: initial;
+    }
+}
+@media (min-width: 701px){
+    .topnav ul li{
+        display: flex;
+    }
+    .topnav nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    nav{
+        padding: 0px 30px 5px;
+    }
+    header {
+        font-size: 50px;
+    }
 }
 
 header {
-    background-color: #9DE0D7;
-    height: 120px;
+    height: 150px;
+    margin-top: 0px;
+    width: 100%;
 }
-
 .header-container {
+    height: 150px;
     max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin: auto;
-}
 
-.top-img {
-    padding-top: 10px;
 }
-
-.logo {
-    float: left;
-    width: 150px;
-    height:100px;
-}
-
-.name {
-    margin-left: 170px;
-    margin-up: 30px;
-    padding: 20px 0px 20px 0px;
-    font-size: 40px;
+.header-container p {
+    font-family: Courier, monospace;
     font-weight: bold;
-    color: black;
-}
-
-a {
-    color: #000000;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #0a1a83;
-    text-decoration: none;
-}
-a:hover {
-    color: #c2e1ff;
-}
-
-.main {
-    max-width: 960px;
-    margin: 0 auto;
+    color: white;
+    letter-spacing: 4px;
 }
 
 .topnav {
-    text-align: center;
-    background-color: #91B3FB;
-    overflow: hidden;
-    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0 5px;
 }
 
-.topnav a {
-    color: #f2f2f2;
-    padding: 50px;
-    text-decoration: none;
-    font-size: 30px;
+.topnav ul li {
+    padding: 0px 50px 5px;
+    font-size: 40px;
+}
+.topnav nav ul {
+    list-style: none;
+}
+body {
+    font-family: Courier, monospace;
+    font-size: 20px;
+    color: rgb(#FFF);
+    background-color: #9DE0D7;
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
+}
+.divref{
+    padding: 10px;
+}
+.container {
+    width: 955px;
+    color: rgb(#FFF);
+    margin: 20px auto;
+    padding: 0px 5px;
+}
+.container img{
+    width: 50px;
+    height: 50px;
+}
+.table {
+    padding: 0px 5px 5px;
 }
 
-.topnav a:hover {
-    background-color: #bacce8;
-    color: black;
+td{
+    border: none;
 }
 
-.topnav a.active {
-    background-color: #04AA6D;
-    color: white;
+tr{
+    border: none;
 }
 
-table {
-    color: black;
-    border: 1px solid #030e54;
-    width: 500px;
+.form {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 0px 5px 5px;
 }
-
-td, th {
-    border: 1px solid #03184d;
-    text-align: center;
+footer {
+    margin-top: 30px;
+    padding: 0px 5px 5px;
+}
+.form, .table, .topnav {
+    width: 955px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    color: #2f5687;
+    color: rgb(220, 220, 220);
 }
 
 table tr:nth-child(2n) {
@@ -94,16 +176,10 @@ table tr:nth-child(2n+1) {
     background-color: #91B3FB;
 }
 
-.bottom {
-    padding-right: 30px;
-    float: right;
-    color: #502223;
-    font-size: 20px;
-    font-weight: 300;
-}
-
-footer {
-    background-color: #ACD7E7;
-    height: 90px;
-    margin: 0;
+header, .topnav, .container, .table, .form, footer{
+    background-color: #2f5687;
+    border-width: thick;
+    border-style: double;
+    border-color: white;
+    border-image: initial;
 }
