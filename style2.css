@@ -11,8 +11,6 @@ body {
     .logo img {
         width: 100px;
     }
-
-    }
 }
 @media screen and (min-width: 541px) {
     .topnav {
