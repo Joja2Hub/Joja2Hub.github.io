@@ -104,6 +104,7 @@ table tr:nth-child(2n+1) {
 
 footer {
     background-color: #ACD7E7;
-    height: 90px;
+    height: 3vh;
     margin: 0;
+    
 }
