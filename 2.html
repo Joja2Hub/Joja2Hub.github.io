@@ -3,6 +3,31 @@
     <head>
         <meta charset="utf-8" />
          <link rel="stylesheet" href="style.css">
+        <style>
+            #main-aside-wrapper
+            {
+                display: flex;
+                flex-direction: column;
+            }
+            #main-aside-wrapper aside
+            {
+                flex: 1;
+                order: 1;
+            }
+            #main-aside-wrapper main
+            {
+                flex: 3;
+                order: 2;
+            }
+            @media screen and (min-width: 800px)
+            {
+                #main-aside-wrapper
+                {
+                    flex-direction: row;
+                }
+            }
+        </style>
+            
         <title>Список Гиперссылок</title>
     </head>
 
