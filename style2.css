@@ -1,183 +1,109 @@
-header{
-		background-image: url(border.png); 
+body {
+    margin: 0;
+    color: black;
+    font-family: Arial;
 }
 
-#main-aside-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-#order {
-  display: flex;
-  flex-direction: column;
-}
-#main-aside-wrapper headermaw, #main-aside-wrapper navmaw, #main-aside-wrapper navigmaw, #main-aside-wrapper footermaw{
-  background-color: #678c97;
-  margin: 0px;
-  padding: 0px;
-}
-#main-aside-wrapper headermaw {
-  flex: 1;
-  order: 1;
-}
-#main-aside-wrapper navigmaw {
-  flex: 1;
-  order: 2;
-}
-#main-aside-wrapper navmaw {
-  flex: 1;
-  order: 3;
-}
-#main-aside-wrapper footermaw {
-  flex: 1;
-  order: 4;
-}
-#order linkmaw
-{
-  flex: 1;
-  order: 1;
-}
-#order formmaw
-{
-  flex: 1;
-  order: 2;
-}
-#order tablemaw
-{
-  flex: 1;
-  order: 3;
-}
-.container {
-  max-width: 960px;
-  margin: auto;
-  color: #D7D1C5;
+header {
+    background-color: #9DE0D7;
+    height: 120px;
 }
 
-.container a {
-  color:#D7D1C5;
-}
-  
-.head{
-	width:100%;
-	padding: 15px; 
-	height:150px;
-	order: 1
-}
-.photo
-{
-	float:left; 
-	margin:10px; 
-	width:100px; 
-	height:100px;
+.header-container {
+    max-width: 960px;
+    margin: auto;
 }
 
-.navigation a{
-	color: #D7D1C5;
+.top-img {
+    padding-top: 10px;
 }
 
-.round {
-	float:left; 
-	margin:10px;
-	width:100px; 
-	height:133px;	
-    border-radius: 25px;
-    border: 3px solid #9E8576;
-    box-shadow: 0 0 7px #000;
-   }
-.head_1{
- width:350px; 
- background:#5E4E4A;
- color: #D7D1C5;
- padding:5px; 
- margin:40px; 
- border-width: 3px; 
- border-color: #9E8576; 
- border-style: dashed; 
-}	
-.h1 
-{
- width:300px; 
- background:#5E4E4A;
- color: #D7D1C5;
- padding:5px; 
- border-width: 3px; 
- border-color: #9E8576; 
- border-style: solid; 
- 
- }
-.navigation {
-  list-style: none;
-  padding:10px;
-  background-color: #5E4E4A;
-  height: auto;
-  line-height: 2;
-  align-content: center;
+.logo {
+    float: left;
+    width: 150px;
+    height:100px;
 }
-.maintable {
-  margin: 25px;
-  height: 200px;
-  width: 300px;
-  border: 3px solid #9E8576;
-  border-collapse: collapse;
+
+.name {
+    margin-left: 170px;
+    margin-up: 30px;
+    padding: 20px 0px 20px 0px;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
 }
-.maintable td {
-  border: 3px solid #9E8576;
-  text-align: center;
+
+a {
+    color: #000000;
+    text-decoration: none;
 }
-.maintable tr:nth-child(2) {
-  background-color: #5E4E4A;
+
+a:visited {
+    color: #0a1a83;
+    text-decoration: none;
 }
-.content li {
-  margin-left: 25px;
-  height: auto;
+a:hover {
+    color: #c2e1ff;
 }
-@media screen and (min-width: 800px) {
-  .navigation {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  padding:10px;
-  background-color: #5E4E4A;
-  height: auto;
-  align-content: center;
+
+.main {
+    max-width: 960px;
+    margin: 0 auto;
 }
-.head_1{
- width:50%; 
- background:#5E4E4A;
- color: #D7D1C5;
- padding:5px; 
- margin:40px; 
- border-width: 3px; 
- border-color: #9E8576; 
- border-style: dashed; 
+
+.topnav {
+    text-align: center;
+    background-color: #91B3FB;
+    overflow: hidden;
+    margin: auto;
 }
-.h1 
-{
- width:40%; 
- background:#5E4E4A;
- color: #D7D1C5;
- padding:5px; 
- border-width: 3px; 
- border-color: #9E8576; 
- border-style: solid; 
- 
- }
- #order formmaw
-{
-  flex: 1;
-  order: 3;
+
+.topnav a {
+    color: #f2f2f2;
+    padding: 50px;
+    text-decoration: none;
+    font-size: 30px;
 }
-#order tablemaw
-{
-  flex: 1;
-  order: 2;
+
+.topnav a:hover {
+    background-color: #bacce8;
+    color: black;
 }
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
 }
-form {
-  margin: 20px;
-  color: #D7D1C5;
+
+table {
+    color: black;
+    border: 1px solid #030e54;
+    width: 500px;
 }
-footer{
-	 
-     background-color: #5E4E4A;
-	 padding: 15px;
+
+td, th {
+    border: 1px solid #03184d;
+    text-align: center;
+}
+
+table tr:nth-child(2n) {
+    background-color: #FDFDFD;
+}
+
+table tr:nth-child(2n+1) {
+    background-color: #91B3FB;
+}
+
+.bottom {
+    padding-right: 30px;
+    float: right;
+    color: #502223;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+footer {
+    background-color: #ACD7E7;
+    height: 90px;
+    margin: 0;
 }
