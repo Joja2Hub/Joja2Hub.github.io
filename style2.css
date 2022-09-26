@@ -129,3 +129,17 @@ footer {
     margin: 0;
     
 }
+    
+    input {
+        padding: 10px 20px;
+        margin-bottom: 10px;
+    }
+    .form textarea {
+        width: 400px;
+    }
+    .table__wrapper {
+        order: 1;
+    }
+    .form {
+        order: 2;
+    }
