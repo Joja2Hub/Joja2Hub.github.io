@@ -1,4 +1,4 @@
-body {
+.body {
     margin: 0;
     color: black;
     font-family: Arial;
@@ -24,9 +24,10 @@ body {
         font-size: 20px;
     }
 
-header {
+.header {
     background-color: #9DE0D7;
     height: 120px;
+    display: flex;
 }
 
 .header-container {
