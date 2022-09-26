@@ -2,13 +2,11 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link rel="stylesheet" href="style2.css">
+         <link rel="stylesheet" href="style.css">
         <title>Список Гиперссылок</title>
     </head>
 
-    <body class="osnov">
+    <body>
         
         <header>
             <div class="header-container">
@@ -23,18 +21,13 @@
             </div>
         </header>
             
-            <div class="topnav">
-                <nav>
-                    <ul>
-                        <li><a href="#1" class="topnav">Ссылка на таблицу</a></li>
-                        <li><a href="#photo" class="topnav">Ссылка на фото</a></li>
-                        <li><a href="#bottom" class="topnav">Сcылка на футер</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="topnav">
+                <a href="#1" class="topnav">Ссылка на таблицу</a>
+                <a href="#photo" class="topnav">Ссылка на фото</a>
+                <a href="#bottom" class="topnav">Сcылка на футер</a>
+            </nav>
         
-        <div class="countainer">
-            <div class="divref">
+        <div class="main">
             <h1>Пронумерованный список гиперссылок:</h1>
             <p><strong>Выберете ссылку</strong></p>
 
@@ -74,13 +67,10 @@
                 <li><a href="/">Сокращенная ссылка на главную</a></li>
                 <li><a href="/pages/page">Сокращенная на внутреннюю</a></li>
             </ol>
-            </div>
-        </div>
             <br />
 
 
             <table id = "1">
-                <div class="table">
                 <tr>
                     <th>Колона 1</th>
                     <th>Колона 2</th>
@@ -111,10 +101,9 @@
                 </tr>
                 </tbody>
             </table>
-            </div>
             <br />
 
-            <div class = "form">
+
             <form action = "/" method="POST">
                 <label>Ваше имя: <br /><input name = "field-name-1" placeholder = "напиши имя" /></label>
                 <br />
@@ -162,7 +151,6 @@
                 <br>
                 <input type = "submit" value = "Отправить" />
             </form>
-            </div>
             <br />
         </div>
         <footer>
