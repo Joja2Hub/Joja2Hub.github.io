@@ -54,7 +54,7 @@ a:hover {
     text-align: left;
     background-color: #91B3FB;
     overflow: hidden;
-    margin: left;
+    margin-left: 2vh;
 }
 
 .topnav a {
