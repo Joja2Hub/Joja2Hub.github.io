@@ -8,11 +8,6 @@ header {
     background-color: #9DE0D7;
     height: 120px;
 }
-form {
-    width: 50px;
-    height: 50px;
-    
-}
 
 .header-container {
     max-width: 960px;
@@ -60,7 +55,7 @@ a:hover {
     text-align: left;
     background-color: #91B3FB;
     overflow: hidden;
-    margin: auto;
+    margin: left;
 }
 
 .topnav a {
@@ -111,7 +106,4 @@ footer {
     height: 3vh;
     margin: 0;
     
-}
-input{
-    padding 50px;
 }
