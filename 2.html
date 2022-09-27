@@ -1,164 +1,177 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8" />
-         <link rel="stylesheet" href="style2.css">
-        <title>Список Гиперссылок</title>
-    </head>
 
-    <body>
-        
-        <header>
-            <div class="header-container">
-                <div class="top-img">
-                    <img src="photo_2022-09-11_15-32-28.jpg" width="207" height="244"
-                        alt="logo"
-                        class="logo">
-                </div>
-                <div class="name">
-                    <p> Гиперссылки </p>
-                </div>
-            </div>
-        </header>
-            
-            <nav class="topnav">
-                <ol>
-                    <li><a href="#1" class="topnav">Ссылка на таблицу</a></li>
-                    <li><a href="#photo" class="topnav">Ссылка на фото</a></li>
-                    <li><a href="#bottom" class="topnav">Сcылка на футер</a></li>
-                </ol>
-            </nav>
-        
-        <div class="main">
-            <h1>Пронумерованный список гиперссылок:</h1>
-            <p><strong>Выберете ссылку</strong></p>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
 
+<body>
+<header class="header">
+    <a class="header__logo" href="https://joja2hub.github.io/2.html">
+        <img src="" alt="">
+    </a>
+    <p class="header__title">Flopper.com</p>
+</header>
+<nav>
+    <ul class="nav__list">
+        <li class="nav__list__item">
+            <a href="#">Ссылка список</a>
+        </li>
+        <li class="nav__list__item">
+            <a href="#">Ссылка на фото</a>
+        </li>
+        <li class="nav__list__item">
+            <a href="#">Ссылка на футтер </a>
+        </li>
+    </ul>
+</nav>
+<div class="links__wrapper">
+    <h1>Список ссылок</h1>
+    <ol>
+        <li><a href = "http://example.com">Абсолютная ссылка на example.com</a></li>
+        <li><a href = "https://example.com">example.com(В протоколе https)</a></li>
+        <li><a href = "ftp://example.com/Lol/1.txt">Сcылка на файл на сервере FTP без авторизации</a></li>
+        <li><a href = "ftp://Admin:121121@example.com/Lol/1.txt">Ссылка на FTP с авторизацией</a></li>
+        <li><a href = "https://kubsu.ru/ru/node/36507#element_id">Ссылка на фрагмент страницы некоторого сайта</a></li>
+        <li><a href="#top">Ссылка фрагмент текущей страницы</a></li>
+        <li><a href = "https://https://github.blog/changelog/2022-09-09-new-audit-log-events-and-event-context/">Ссылка с двумя параметрами в URL</a></li>
+        <li>
+            <h3>Список ссылок навигации с подписями</h3>
             <ol>
-                <li><a href = "http://example.com">Абсолютная ссылка на example.com</a></li>
-                <li><a href = "https://example.com">example.com(В протоколе https)</a></li>
-                <li><a href = "ftp://example.com/Lol/1.txt">Сcылка на файл на сервере FTP без авторизации</a></li>
-                <li><a href = "ftp://Admin:121121@example.com/Lol/1.txt">Ссылка на FTP с авторизацией</a></li>
-                <li><a href = "https://kubsu.ru/ru/node/36507#element_id">Ссылка на фрагмент страницы некоторого сайта</a></li>
-                <li><a href="#top">Ссылка фрагмент текущей страницы</a></li>
-                <li><a href = "https://https://github.blog/changelog/2022-09-09-new-audit-log-events-and-event-context/">Ссылка с двумя параметрами в URL</a></li>
-                <li>
-                    <h3>Список ссылок навигации с подписями</h3>
-                    <ol>
-                        <li><a href="https://www.kubsu.ru/ru/university" title="Университет">Университет</a></li>    
-                        <li><a href="https://www.kubsu.ru/ru/education" title="Образование">Образование</a></li>
-                    </ol>
-                </li>
-                <li><a>https://example.com/ Cсылка без href</a></li>
-                <li><a href = "">Ссылка с пустым href </a></li>
-                <li><a href="https://example.com" rel="nofollow">Ссылка запрещенная для поисковиков</a></li>
-                <li><a href="https://example.com" rel="noindex">Ссылка запрещенная для индексации поисковиками</a></li>
-                <li>В интернете существует <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" title = "контекстная ссылка">удивительно видео</a></li>
-                <li><a href = "https://lifehacker.ru/kak-varit-pelmeni/"><img id ="photo" src = "https://github.com/Joja2Hub/Joja2Hub.github.io/blob/main/photo_2022-09-11_15-32-28.jpg?raw=true" alt = "Ссылка-изображение" style = "width:512px;height:640px;border:0;"></a></li>
-                <li>
-                    <img src="https://github.com/Joja2Hub/Joja2Hub.github.io/blob/main/Квадро_шлепа.jpg?raw=true" width="512" height="640" alt="ШлепаКвадрат" usemap="#Kvadrat">
-                    <img src="https://github.com/Joja2Hub/Joja2Hub.github.io/blob/main/ШлепаКруг.jpg?raw=true" width="512" height="640" alt="ШлепаКруг" usemap="#Krug">
-                    <map id = "Kvadrat" name="Kvadrat" >
-                    <area shape="rect" coords="137,16,392,241" href="https://vk.com/joja2" alt="Прямоугольная область"></map>
-                    <map name="Krug">
-                    <area shape="circle" coords="259,100,100" href="https://github.com/Joja2Hub" alt="Круглая область"></map>
-                </li>
-                <li><a href = "page">Относительная ссылка в текущем каталоге</a></li> 
-                <li><a href = "/about/page">Относительная ссылка в каталоге about</a></li>
-                <li><a href = "../page">Относительная ссылка в каталоге уровнем выше текущего</a></li> 
-                <li><a href = "../../page">Относительная ссылка а каталоге уровнем двумя выш текущего</a></li>
-                <li><a href="/">Сокращенная ссылка на главную</a></li>
-                <li><a href="/pages/page">Сокращенная на внутреннюю</a></li>
+                <li><a href="https://www.kubsu.ru/ru/university" title="Университет">Университет</a></li>    
+                <li><a href="https://www.kubsu.ru/ru/education" title="Образование">Образование</a></li>
             </ol>
-            <br />
+        </li>
+        <li><a>https://example.com/ Cсылка без href</a></li>
+        <li><a href = "">Ссылка с пустым href </a></li>
+        <li><a href="https://example.com" rel="nofollow">Ссылка запрещенная для поисковиков</a></li>
+        <li><a href="https://example.com" rel="noindex">Ссылка запрещенная для индексации поисковиками</a></li>
+        <li>В интернете существует <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ" title = "контекстная ссылка">удивительно видео</a></li>
+        <li><a href = "https://lifehacker.ru/kak-varit-pelmeni/"><img id ="photo" src = "https://github.com/Joja2Hub/Joja2Hub.github.io/blob/main/photo_2022-09-11_15-32-28.jpg?raw=true" alt = "Ссылка-изображение" style = "width:400px;height:540px;border:0;"></a></li>
+        <li>
+            <img src="https://github.com/Joja2Hub/Joja2Hub.github.io/blob/main/Квадро_шлепа.jpg?raw=true" width="400" height="540" alt="ШлепаКвадрат" usemap="#Kvadrat">
+            <img src="https://github.com/Joja2Hub/Joja2Hub.github.io/blob/main/ШлепаКруг.jpg?raw=true" width="400" height="540" alt="ШлепаКруг" usemap="#Krug">
+            <map id = "Kvadrat" name="Kvadrat" >
+            <area shape="rect" coords="137,16,392,241" href="https://vk.com/joja2" alt="Прямоугольная область"></map>
+            <map name="Krug">
+            <area shape="circle" coords="259,100,100" href="https://github.com/Joja2Hub" alt="Круглая область"></map>
+        </li>
+        <li><a href = "page">Относительная ссылка в текущем каталоге</a></li> 
+        <li><a href = "/about/page">Относительная ссылка в каталоге about</a></li>
+        <li><a href = "../page">Относительная ссылка в каталоге уровнем выше текущего</a></li> 
+        <li><a href = "../../page">Относительная ссылка а каталоге уровнем двумя выш текущего</a></li>
+        <li><a href="/">Сокращенная ссылка на главную</a></li>
+        <li><a href="/pages/page">Сокращенная на внутреннюю</a></li>
+    </ol>
+    
+</div>
+<div class="table__form__wrapper">
+    <div class="table__wrapper">
+        <h1 class="title">Таблица</h1>
+        <table class="table">
+            <tr>
+                <th>заголовок 1</th>
+                <th>заголовок 2</th>
+                <th>заголовок 3</th>
+                <th>заголовок 4</th>
+                <th>заголовок 5</th>
+            </tr>
+            <tr>
+                <td colspan="5">1</td>
 
-
-            <table id = "1">
-                <tr>
-                    <th>Колона 1</th>
-                    <th>Колона 2</th>
-                    <th>Колона 3</th>
-                </tr>
-                <tbody>
-                <tr>
-                    <td colspan="3">Объединение всех</td>
-                </tr>
-                <tr>
-                    <td colspan="2">Объединение 2ух</td>
-                     <td>6</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>11</td>
-                    <td>12</td>
-                </tr>
-                <tr>
-                    <td>13</td>
-                    <td>14</td>
-                    <td>15</td>
-                </tr>
-                </tbody>
-            </table>
-            <br />
-
-
-            <form action = "/" method="POST">
-                <label>Ваше имя: <br /><input name = "field-name-1" placeholder = "напиши имя" /></label>
-                <br />
-                <label> email: <br /><input name = "field-email" placeholder = "test@example.com" type ="email" /></label>
-                <br />
-                <br />
-
-                <label>Дата рождения: <br /><input name = "field-date" value = "2022-06-09" type ="date" /></label>
-                <br />
-                <br />
-                <label> Ваш пол?  <br /> </label>
-                    <label><input type = "radio" name = "radio-group-1" value ="Значение_1">
-                        Мужской</label><br />
-                    <label><input type = "radio" name = "radio-group-1" value ="Значение_2">
-                        Женский</label><br />
-                    <label><input type = "radio" name = "radio-group-1" value ="Значение_3">
-                        Другое</label><br />
-                <br />
-                <label>Выберете кол-во коненочстей : <br /> </label>
-                <label><input type="radio" name="radio-group-2" value = "Значение_1">
-                    Нет конечнотей</label><br />
-                <label><input type="radio" name="radio-group-2" value = "Значение_2">
-                    3 или менее</label><br />
-                <label><input type="radio" name="radio-group-2" value = "Значение_3">
-                    4</label><br />
-                <label><input type="radio" name="radio-group-2" value = "Значение_3">
-                    5</label><br />
-                <label><input type="radio" name="radio-group-2" value = "Значение_5">
-                    6 или более </label>
-                <br />
-                <br />
-                <label>Свехспособности: <br /> </label>   
-                    <select name = "field-name-4[]" multiple = "multiple">
-                        <option value ="Значение1">Бессмертие</option>
-                        <option value ="Значение2"> Прохождение сквозь стенки</option>
-                        <option value ="Значение3"> Левитация</option>
-                    </select>
-                <br />
-                <br />
-                <label>Биография <br /> </label>
-                    <textarea name ="field-name-2" placeholder = "Напишите о себе" ></textarea>
-                <br />
-                <br />
-                <label><input type = "checkbox" checked="checked" name="check-1">С контактом ознакомлен (a)</label>
-                <br>
-                <input type = "submit" value = "Отправить" />
-            </form>
-            <br />
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+        </table>
+    </div>
+    <form class="form" action="#">
+        <h1>Форма</h1>
+        <input type="text" name="name" placeholder="Имя">
+        <br>
+        <input type="email" name="email" placeholder="E-mail">
+        <br>
+        <input type="date" name="date">
+        <br>
+        <br>
+        <p>Выберете пол</p>
+        <div id="gender">
+            <br>
+            <label><input type = "radio" name = "radio-group-1" value ="Значение_1">
+                Мужской</label><br />
+            <label><input type = "radio" name = "radio-group-1" value ="Значение_2">
+                Женский</label><br />
+            <label><input type = "radio" name = "radio-group-1" value ="Значение_3">
+                Другое</label><br />
         </div>
-        <footer>
-        <div class="footer-bg" id = "bottom">
-            Ерюшев Иван 2022
+        <br>
+        <p>Количество конечностей</p>
+        <div id="limbs">
+            <br>
+            <input type="radio" name="limb" id="1">
+            <label for="1">Нет конечностей</label>
+            <br>
+            <input type="radio" name="limb" id="2">
+            <label for="2">3 или менее</label>
+            <br>
+            <input type="radio" name="limb" id="3">
+            <label for="3">3</label>
+            <br>
+            <input type="radio" name="limb" id="4">
+            <label for="4">4 или более</label>
         </div>
-    </footer>
-    </body>
+        <p>Сверхспособности</p>
+        <select name="superpower">
+            <option selected value="immortal">Бессмертие</option>
+            <option value="passing_through_walls">Прохождение сквозь стены</option>
+            <option value="levitation">Левитация</option>
+        </select>
+        <br>
+        <h2>Биография</h2>
+        <textarea name="biography" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <input id="policy" type="checkbox" required>
+        <label for="policy">С контрактом ознакомлен</label>
+        <br>
+        <br>
+        <button>Отправить</button>
+    </form>
+</div>
+
+
+<footer class="footer">
+    <p>(c) Иван Ерюшев 2022</p>
+</footer>
+</body>
+
 </html>
