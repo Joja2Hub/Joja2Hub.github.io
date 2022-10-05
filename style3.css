@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 header{
-    background: #000;
+    background: rgb(31, 46, 112);
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -41,7 +41,7 @@ footer{
 
 .navigation {
     text-align: center;
-    background-color:#CFCFCF;
+    background-color:#96b4da;
 }
 
 .navigation ul {
@@ -80,10 +80,10 @@ table{
 }
 
 .tb1{
-    background-color: #FFF;
+    background-color: rgb(123, 126, 128);
 }
 .tb2{
-    background-color: lightsteelblue;
+    background-color: rgb(57, 120, 188);
 }
 .form{
 }
