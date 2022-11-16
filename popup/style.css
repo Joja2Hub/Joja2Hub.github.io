@@ -1,0 +1,33 @@
+body
+{
+    font-family: 'fantasy', Times, serif;
+    font-size: 1.5em;
+    background-color: rgb(119, 168, 231);
+}
+.center
+{
+    text-align: left;
+}
+.otstyp_verh
+{
+    padding-top: 2em;
+}
+.popup
+{
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+}
+.popup-content
+{
+    margin: 200px auto 0px auto;
+    width: 800px;
+    height: 500px;
+    padding: 10px;
+    background-color: #e5dabc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
+}
