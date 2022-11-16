@@ -1,13 +1,13 @@
 $(document).ready(function() {  
-    PopUpHide();
+  PopUpHide();
 });
 
 function PopUpShow() {
-    $("#popup1").show();
+  $("#popup1").show();
 }
 
 function PopUpHide() {
-    $("#popup1").hide();
+  $("#popup1").hide();
 }
 
 function Send() {
@@ -16,12 +16,12 @@ var obj = JSON.parse(json);
 alert(obj.key);
 var xhr = new XMLHttpRequest();
 function go() {
-  xhr.open('GET', '/web8/json/a.txt', false);
-  xhr.send();
-  var element = document.getElementById('frag');
-  element.innerHTML = xhr.responseText;
-  return false;
-    }
+xhr.open('GET', '/web8/json/a.txt', false);
+xhr.send();
+var element = document.getElementById('frag');
+element.innerHTML = xhr.responseText;
+return false;
+  }
 }
 
 let openPopupButtons = document.querySelectorAll('.open-popup');
@@ -32,85 +32,71 @@ let msg = document.getElementById('Text');
 let cb = document.getElementById('CB');
 
 function save() {
-  localStorage.setItem('Имя', names.value);
-  localStorage.setItem('Почта', email.value);
-  localStorage.setItem('Сообщение', msg.value);
-  if (cb.checked) {
-    localStorage.setItem('Чекбокс', 1);
-  } else {
-    localStorage.setItem('Чекбокс', 0);
-  }
+localStorage.setItem('Имя', names.value);
+localStorage.setItem('Почта', email.value);
+localStorage.setItem('Сообщение', msg.value);
+if (cb.checked) {
+  localStorage.setItem('Чекбокс', 1);
+} else {
+  localStorage.setItem('Чекбокс', 0);
+}
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  names.value = localStorage.getItem('Имя');
-  email.value = localStorage.getItem('Почта');
-  msg.value = localStorage.getItem('Сообщение');
-  let checkBox = localStorage.getItem('Чекбокс');
-  if (checkBox == 1) {
-    cb.checked = true;
-  } else if (checkBox == 0) {
-    cb.checked = false;
-  }
+names.value = localStorage.getItem('Имя');
+email.value = localStorage.getItem('Почта');
+msg.value = localStorage.getItem('Сообщение');
+let checkBox = localStorage.getItem('Чекбокс');
+if (checkBox == 1) {
+  cb.checked = true;
+} else if (checkBox == 0) {
+  cb.checked = false;
+}
 
-  names.oninput = save;
-  email.oninput = save;
-  msg.oninput = save;
-  cb.oninput = save;
+names.oninput = save;
+email.oninput = save;
+msg.oninput = save;
+cb.oninput = save;
 
-  openPopupButtons.forEach((button) => {
-    button.addEventListener('click', (e) => {
-      e.preventDefault();
-      window.onpopstate = function () {
-        window.history.back();
-        popupBg.classList.remove('active');
-        popup.classList.remove('active');
-      };
-      history.pushState({ page: 1 }, 'forma', '?forma');
-      popupBg.classList.add('active');
-      popup.classList.add('active');
-    });
-  });
-
-  closePopupButton.addEventListener('click', () => {
-    window.history.back();
-    popupBg.classList.remove('active');
-    popup.classList.remove('active');
-  });
-
-  document.addEventListener('click', (e) => {
-    if (e.target === popupBg) {
+openPopupButtons.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.onpopstate = function () {
       window.history.back();
       popupBg.classList.remove('active');
       popup.classList.remove('active');
-    }
+    };
+    history.pushState({ page: 1 }, 'forma', '?forma');
+    popupBg.classList.add('active');
+    popup.classList.add('active');
   });
+});
 
-  $(function () {
-    $('#forma').submit(function (e) {
-      e.preventDefault();
-      $.ajax({
-        type: 'POST',
-        dataType: 'json',
-        url: 'https://formcarry.com/s/cFkX6p8Wc',
-        data: $(this).serialize(),
-        success: function (response) {
-          if (response.status == 'success') {
-            alert('Форма была отправлена!');
-            localStorage.removeItem('Имя');
-            localStorage.removeItem('Почта');
-            localStorage.removeItem('Сообщение');
-            localStorage.removeItem('Чекбокс');
-            names.value = localStorage.getItem('Имя');
-            email.value = localStorage.getItem('Почта');
-            msg.value = localStorage.getItem('Сообщение');
-            cb.checked = false;
-          }
-        },
-        error: function (jqxhr, status, errorMsg) {
-          alert('Ошибка!');
-        },
-      });
+$(function () {
+  $('#forma').submit(function (e) {
+    e.preventDefault();
+    $.ajax({
+      type: 'POST',
+      dataType: 'json',
+      url: 'https://formcarry.com/s/LKEmd9SHK',
+      data: $(this).serialize(),
+      success: function (response) {
+        if (response.status == 'success') {
+          alert('Форма была отправлена!');
+          localStorage.removeItem('Имя');
+          localStorage.removeItem('Почта');
+          localStorage.removeItem('Сообщение');
+          localStorage.removeItem('Чекбокс');
+          names.value = localStorage.getItem('Имя');
+          email.value = localStorage.getItem('Почта');
+          msg.value = localStorage.getItem('Сообщение');
+          cb.checked = false;
+        }
+      },
+      error: function (jqxhr, status, errorMsg) {
+        alert('Ошибка!');
+      },
     });
   });
+});
 });
