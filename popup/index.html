@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = "ru">
+    <head>
+        <meta charset = "utf-8">
+        <link rel = "stylesheet" type = "text/css" href = "Style.css">
+        <script src = "jq.js" defer></script>
+        <script src = "popup.js" defer></script>
+        <title>Контактная форма</title>
+    </head>
+    <body>
+        <div class = "center">
+            <h1>Страница с формой PopUp</h1>
+            <button onclick = "PopUpShow()" class = "open-popup">Отправить данные</button>
+        </div>
+        <div class = "popup" id = "popup1">
+            <div class = "center popup-content">
+                <form class = "center otstyp_verh" action = "/" method = "POST" id = "forma">
+                    <h2>Контактная форма</h2>
+                    <label>Введите Ваше имя:<br><input id = "Name" name = "Name" placeholder = "Иван"></label>
+                    <br>
+                    <label>Введите Вашу почту:<br><input id = "Email" name = "Email" type = "email" placeholder = "User@mail.com"></label>
+                    <br>
+                    <label>Ваш любимый цвет:<br><textarea id = "Text" name = "Color" placeholder = "Красный"></textarea></label>
+                    <br>
+                    <label><input id = "CB" type = "checkbox" name = "check-1">Согласен с политикой обработки персональных данных</label>
+                    <br>
+                    <input type = "submit" value = "Отправить форму">
+                </form>
+                <button onclick = "PopUpHide()" class = "close-popup">Скрыть форму</button>
+            </div>
+        </div>
+    </body>
+</html>
